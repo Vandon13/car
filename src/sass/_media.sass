@@ -1,0 +1,66 @@
+@media (max-width: 1200px)
+	.container
+		max-width: 960px
+	.hero
+		&__title
+			font-size: 45px
+		&__car
+			display: none
+@media (max-width: 992px)
+	.container
+		max-width: 768px
+	.hero
+		&__title
+			font-size: 43px
+	.navbar
+		margin-bottom: 80px
+		&__link:not(:last-child)
+			margin-right: 25px
+@media (max-width: 768px)
+	.container
+		max-width: 576px
+	.navbar
+		&__logo
+			font-size: 26px
+			margin-right: 100px
+		&__list
+			display: flex
+			flex-wrap: wrap
+		&__link
+			flex-basis: 50%
+			&:not(:last-child)
+				margin-right: 0
+	.hero
+		&__title
+			font-size: 37px
+@media (max-width: 576px)
+	.container
+		max-width: 480px
+		width: 90%
+	.navbar
+		&__list
+			flex-direction: column
+		&__link
+			flex-basis: 100%
+	.hero
+		&__title
+			font-size: 30px
+			line-height: 38px
+@media (max-width: 430px)
+	.container
+		max-width: 320px
+	.hero
+		&__title
+			max-width: 210px
+		&__descr
+			max-width: 265px
+	.navbar
+		margin-bottom: 30px
+		&__list
+			display: none
+	.modal
+		&__title
+			font-size: 20px
+			line-height: 26px
+		&__text
+			line-height: 24px
