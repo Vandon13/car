@@ -1,5 +1,5 @@
 .navbar
-	margin-bottom: 130px
+	padding-bottom: 130px
 	&__body
 		display: flex
 		justify-content: space-between
@@ -20,3 +20,35 @@
 			margin-right: 60px
 		&:hover
 			color: $primary
+.burger-menu
+	position: relative
+	width: 40px
+	height: 40px
+	background-color: transparent
+	text-align: center
+	&__span
+		position: absolute
+		top: 50%
+		left: 40px
+		margin-top: -1px
+		width: 20px
+		height: 2px
+		background-color: $white
+		&::before
+			content: ''
+			position: absolute
+			top: 50%
+			margin-top: -1px
+			width: 20px
+			height: 2px
+			background-color: $white
+			transform: translateY(-5px)
+		&::after
+			content: ''
+			position: absolute
+			top: 50%
+			margin-top: -1px
+			width: 15px
+			height: 2px
+			background-color: $white
+			transform: translateY(5px)

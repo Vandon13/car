@@ -6,6 +6,11 @@
 			font-size: 45px
 		&__car
 			display: none
+	.benefits
+		&__item
+			flex-basis: 50%
+			&:nth-child(-n+4)
+				margin-bottom: 50px
 @media (max-width: 992px)
 	.container
 		max-width: 768px
@@ -33,6 +38,14 @@
 	.hero
 		&__title
 			font-size: 37px
+	.benefits
+		&__item
+			flex-basis: 100%
+			justify-content: center
+			&:not(:last-child)
+				margin-bottom: 50px
+		&__text
+			max-width: 223px
 @media (max-width: 576px)
 	.container
 		max-width: 480px
@@ -64,3 +77,11 @@
 			line-height: 26px
 		&__text
 			line-height: 24px
+	.benefits
+		&__item
+			flex-wrap: wrap
+			text-align: center
+		&__circle
+			margin-bottom: 10px
+		&__text
+			max-width: 100%
