@@ -11,6 +11,17 @@
 			flex-basis: 50%
 			&:nth-child(-n+4)
 				margin-bottom: 50px
+	.feedback
+		&__text
+			background-color: transparent
+	.partnership
+		display: none
+	.footer
+		&__body
+			border-top: 0
+	.off
+		&__car
+			display: none
 @media (max-width: 992px)
 	.container
 		max-width: 768px
@@ -21,6 +32,15 @@
 		margin-bottom: 80px
 		&__link:not(:last-child)
 			margin-right: 25px
+	.feedback
+		&__body
+			flex-direction: column
+		&__text
+			padding: 0
+		&__name
+			text-align: center
+		&__image
+			margin-bottom: 15px
 @media (max-width: 768px)
 	.container
 		max-width: 576px
@@ -35,6 +55,10 @@
 			flex-basis: 50%
 			&:not(:last-child)
 				margin-right: 0
+	.off
+		&__title
+			font-size: 33px
+			line-height: 33px
 	.hero
 		&__title
 			font-size: 37px
@@ -46,6 +70,13 @@
 				margin-bottom: 50px
 		&__text
 			max-width: 223px
+	.footer
+		&__body
+			padding: 25px 0
+			flex-direction: column
+			justify-content: flex-start
+		&__span:first-child
+			margin-bottom: 20px
 @media (max-width: 576px)
 	.container
 		max-width: 480px
@@ -59,6 +90,23 @@
 		&__title
 			font-size: 30px
 			line-height: 38px
+	.benefits
+		padding: 80px
+		&__title
+			font-size: 30px
+	.feedback
+		padding-bottom: 80px
+		&__title
+			font-size: 30px
+	.off
+		padding-top: 60px
+		&__title
+			margin-bottom: 36px
+			font-size: 27px
+			line-height: 27px
+	.partnership
+		&__title
+			font-size: 30px
 @media (max-width: 430px)
 	.container
 		max-width: 320px
@@ -69,7 +117,7 @@
 			max-width: 265px
 	.navbar
 		margin-bottom: 30px
-		&__list
+		&__link
 			display: none
 	.modal
 		&__title
@@ -85,3 +133,10 @@
 			margin-bottom: 10px
 		&__text
 			max-width: 100%
+	.off
+		&__title
+			font-size: 25px
+			line-height: 25px
+	.footer
+		&__span:first-child
+			max-width: 210px
